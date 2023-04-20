@@ -1,0 +1,280 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbar {
+    display: flex;
+
+    position: relative;
+
+
+
+
+}
+
+#logo {
+    margin: -4px 30px;
+    padding: 10px;
+
+}
+
+#logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+}
+
+#navbar ul {
+    display: flex;
+    padding: 2px;
+    margin: 10px;
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    top: 0px;
+    left: 0px;
+}
+
+#navbar ul li {
+    list-style-type: none;
+    font-size: 20px;
+}
+
+#navbar ul li a {
+    color: white;
+    padding: 2px 14px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+#home {
+    /* display flex use kiye tbhi content ko center kar paoge */
+    display: flex;
+    /* flex karne se to ek line me na aa jta to uss liye flex dircn column karna para taki ek k niche ek rhe */
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+
+
+}
+
+#home::before {
+    content: "";
+    background-image: url(food5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* ye pura page cover krega */
+    position: absolute;
+    /* ye niche wla height k liye hai */
+    height: 55%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    top: 0px;
+    left: 0px;
+
+}
+
+.h-primary {
+    font-size: 45px;
+    padding: 12px;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+}
+
+#home p {
+    color: white;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(31, 243, 31);
+    color: white;
+    margin: 18px;
+    border-radius: 13px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: gray;
+}
+
+/* our services */
+.services h1 {
+    font-size: 28px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-family:  'Times New Roman';
+}
+
+/* ye tino box ko ek hi line me hi le ayega  */
+.container {
+    display: flex;
+    padding: 0px 20px;
+}
+
+#box1 {
+    /* display: flex; */
+    /* flex-direction:column; */
+    border: 3px solid black;
+    border-radius: 9px;
+    height: 390px;
+    width: 370px;
+    background-color: #d3cabecc;
+    margin: 0px 20px;
+    /* align-items: center; */
+
+}
+
+section #box1 img {
+    height: 200px;
+    width: 200px;
+    padding: 20px 97px;
+}
+
+section #box1 h2 {
+    font-size: 18px;
+    font-family:'Times New Romon';
+    text-align: center;
+}
+
+section #box1 p {
+    font-size: 15px;
+    padding: 16px 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+#box2 {
+    border: 3px solid black;
+    border-radius: 9px;
+    height: 390px;
+    width: 370px;
+    background-color: #d3cabecc;
+    margin: 0px 20px;
+}
+
+section #box2 img {
+    height: 200px;
+    width: 200px;
+    padding: 20px 97px;
+}
+
+section #box2 h2 {
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+section #box2 p {
+    font-size: 15px;
+    padding: 16px 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+#box3 {
+    border: 3px solid black;
+    border-radius: 9px;
+    height: 390px;
+    width: 370px;
+    background-color: #d3cabecc;
+    margin: 0px 20px;
+}
+
+section #box3 img {
+    height: 200px;
+    width: 200px;
+    padding: 20px 97px;
+
+}
+
+section #box3 h2 {
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    text-align: center;
+}
+
+section #box3 p {
+    font-size: 15px;
+    padding: 16px 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.container1{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+} 
+
+.img-responsive{
+    width: 100%;
+}
+.img-curve{
+    border-radius: 15px;
+} 
+.food-menu{
+    background-color: #ececec;
+    padding: 4% 0;
+
+}
+.food-menu-box{
+    width: 43%;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.food-menu-img{
+    width: 20%;
+    float: left;
+}
+
+.food-menu-desc{
+    width: 70%;
+    float: left;
+    margin-left: 8%;
+}
+
+.food-price{
+    font-size: 1.2rem;
+    margin: 2% 0;
+}
+.food-detail{
+    font-size: 1rem;
+    color: #747d8c;
+}
+.food-menu-box{
+    border:2px solid black;
+
+}
